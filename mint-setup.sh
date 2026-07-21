@@ -37,6 +37,7 @@ git clone https://github.com/chaslinux/mint-extras
 # No need to do geekbench anymore using sysbench and glmark2 in hardware.sh to do benchmarking
 # git clone https://github.com/chaslinux/geekbench-dl
 git clone https://github.com/chaslinux/pts
+git clone https://github.com/chaslinux/update-firmware
 
 
 # now run the hardware detection script, followed by the mint-extras (additional software), and
@@ -56,5 +57,7 @@ cd ~/Code/mint-extras
 cd ~/Code/pts
 ./phoronix.sh
 
-
+# Now check for firmware updates
+cd ~/Code/update-firmware
+./update-firmware.sh
 
