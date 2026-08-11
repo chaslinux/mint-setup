@@ -36,7 +36,7 @@ git clone https://github.com/chaslinux/hardware.sh
 git clone https://github.com/chaslinux/mint-extras
 # No need to do geekbench anymore using sysbench and glmark2 in hardware.sh to do benchmarking
 # git clone https://github.com/chaslinux/geekbench-dl
-git clone https://github.com/chaslinux/pts
+git clone https://github.com/chaslinux/mint-device-screensaver
 git clone https://github.com/chaslinux/update-firmware
 
 
@@ -47,15 +47,9 @@ cd ~/Code/hardware.sh
 cd ~/Code/mint-extras
 ./mint-extras.sh
 
-# Test removed from this script as we no longer run it as part of our process
-# cd ~/Code/geekbench-dl
-#./geekbench-dl.sh
-# create a delay so the volunteer can follow the Geekbench URL and write down the results
-# read -p "Follow the link above and write down the results. Press any key to start the game benchmark!" -n1 -s
-
-# Install Phoronix-Test-Suite, but we're not using it anymore, it's still handy for some testing
-cd ~/Code/pts
-./phoronix.sh
+# Install mint-device-screensaver, not a screensaver as such, but a display
+cd ~/Code/mint-device-screensaver
+./install.sh
 
 # Now check for firmware updates
 cd ~/Code/update-firmware
