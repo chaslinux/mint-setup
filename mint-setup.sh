@@ -18,7 +18,7 @@ GINSTALL=$(which git)
 
 
 ## first run all updates
-sudo apt update && sudo apt upgrade -y && flatpak update
+sudo apt update && sudo apt upgrade -y && flatpak update -y
 
 # Check if git is installed, if not, install git
 if [ -z "$GINSTALL" ];
